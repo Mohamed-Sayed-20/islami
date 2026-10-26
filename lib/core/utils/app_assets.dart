@@ -10,4 +10,16 @@ class AppAssets {
   static const String iconSebha = 'assets/images/icon_sebha.png';
   static const String iconRadio = 'assets/images/icon_radio.png';
   static const String iconTime = 'assets/images/icon_time.png';
+  static const String iconSearch = 'assets/images/icon_search.png';
+  static const String mostRecent = 'assets/images/most_recent.png';
+  static const String vector = 'assets/images/vector.png';
+  static const String leftCorner = 'assets/images/left_corner.png';
+  static const String rightCorner = 'assets/images/right_corner.png';
+  static const String mosqueImage = 'assets/images/mosqueImage.png';
+  static const String suraDetailsGroup = 'assets/images/sura_details_group.png';
+  static const String introductionScreenImage1 = 'assets/images/image_1.png';
+  static const String introductionScreenImage2 = 'assets/images/image_2.png';
+  static const String introductionScreenImage3 = 'assets/images/image_3.png';
+  static const String introductionScreenImage4 = 'assets/images/image_4.png';
+  static const String introductionScreenImage5 = 'assets/images/image_5.png';
 }

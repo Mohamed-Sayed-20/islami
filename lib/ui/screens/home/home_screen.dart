@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:islami_session_6/core/utils/app_assets.dart';
 import 'package:islami_session_6/core/utils/app_colors.dart';
+import 'package:islami_session_6/core/utils/app_size_utils.dart';
+import 'package:islami_session_6/core/utils/app_styles.dart';
 import 'package:islami_session_6/ui/screens/home/tabs/hadeth/hadeth_tab.dart';
 import 'package:islami_session_6/ui/screens/home/tabs/quran/quran_tab.dart';
 import 'package:islami_session_6/ui/screens/home/tabs/radio/radio_tab.dart';
@@ -37,8 +39,11 @@ class _HomeScreenState extends State<HomeScreen> {
           canvasColor: AppColors.primaryColor,
         ),
         child: BottomNavigationBar(
+          // backgroundColor: AppColors.primaryColor,
+          // //   type:BottomNavigationBarType.fixed,
             selectedItemColor: AppColors.whiteColor,
             unselectedItemColor: AppColors.blackColor,
+            selectedLabelStyle: AppStyles.bold16white,
             currentIndex: selectedIndex,
             onTap: (index) {
               selectedIndex = index;
@@ -46,8 +51,6 @@ class _HomeScreenState extends State<HomeScreen> {
 
               });
             },
-            // backgroundColor: AppColors.primaryColor,
-            //   type:BottomNavigationBarType.fixed,
             items: [
               builtBottomNavigationBarItem(
                   icon: AppAssets.iconQuran, label: 'Quran', index: 0),
@@ -72,7 +75,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
           SafeArea(
             child: Column(
-              spacing: 20,
+              spacing: context.height * 0.02,
               children: [
                 Image.asset(AppAssets.logo),
                 Expanded(child: tabsList[selectedIndex]),
